@@ -28,26 +28,29 @@
 
     <header>
         <nav class="container">
-            <i id="user" class="fa-solid fa-user-tie"></i>
+            <a href="#" class="logo"><img src="img/logo_divM2(2).png" alt="logo_divM2"></a>
+            <div class="links" id="links">
+                <span class="close_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-xmark"></i></span>
 
-            <div class="links">
-                <a class="active" href="#">Home</a>
-                <a href="#"><b>About</b></a>
-                <a href="#"><b>Services</b></a>
-                <a href="#"><b>Project</b></a>
-                <a href="#"><b>Contact</b></a>
+                <a href="#" class="logo"><i id="user" class="fa-solid fa-user-tie"></i></a>
+                <a class="active" href="#home">Home</a>
+                <a href="#about"><b>About</b></a>
+                <a href="#services"><b>Services</b></a>
+                <a href="#projects"><b>Project</b></a>
+                <a href="#contact"><b>Contact</b></a>
             </div>
 
             <div class="icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/merhi_27?stkn=bXhvc281NnZhaXB6"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+96171316213"><i class="fa-brands fa-whatsapp"></i></a>
+                <span class="icon_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-bars"></i></span>
             </div>
         </nav>
     </header>
 
 
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="container">
             <div class="div_text">
                 <h4>Hello, i'm</h4>
@@ -57,7 +60,7 @@
 
                 <div class="btns">
                     <a href="#" class="btn">Hire me</a>
-                    <a href="#" class="btn_no_bg">Download Resume</a>
+                    <a href="CV_MohamadMerhi.pdf" class="btn_no_bg" download="">Download Resume</a>
                 </div>
             </div>
 
@@ -68,7 +71,7 @@
         </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="div_text">
                 <h5>about me</h5>
@@ -88,7 +91,7 @@
                     <li><i class="fa-solid fa-check"></i> 2D games</li>
                 </ul>
 
-                <a href="Image to PDF 20260929 16.28.49.pdf" download class="btn">Download CV</a>
+                <a href="CV_MohamadMerhi.pdf" download class="btn">Download CV</a>
             </div>
 
             <div class="div_img">
@@ -97,7 +100,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="top_section">
                 <h2>My <span>Services</span></h2>
@@ -131,7 +134,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="top_section">
                 <h2>Explore my Popular <span>projects</span></h2>
@@ -224,23 +227,23 @@
             <div class="soial_contact">
                 <h2>Follow Me</h2>
                 <div class="links">
-                    <a href="mailto:/*write email*/"><i class="fa-solid fa-envelope"></i>Example@email.com</a>
-                    <a href="tel:/*write number*/"><i class="fa-solid fa-phone"></i>comingSoon</a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+                    <a href="mailto:modimerhi@gmail.com"><i class="fa-solid fa-envelope"></i>modimerhi@gmail.com</a>
+                    <a href="tel:+96171316213"><i class="fa-solid fa-phone"></i>+961 71 316213</a>
+                    <a href="https://www.instagram.com/merhi_27?stkn=bXhvc281NnZhaXB6"><i class="fa-brands fa-instagram"></i>Instagram</a>
                 </div>
             </div>
 
-            <form action="">
+            <form method="POST" action="https://api.sheetmonkey.io/form/sm3RpU8XDFh1hS2CowwRp1">
                 <div class="input_form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Mobile Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Full Name" name="Name" required>
+                    <input type="email" placeholder="Email" name="Email" required>
+                    <input type="text" placeholder="Mobile Number" name="Mobile Number">
+                    <input type="text" placeholder="Subject" name="Subject">
 
-                    <textarea name="" id="" rows="10" placeholder="Your Message Here ..."></textarea>
+                    <textarea name="Message" id="" rows="10" placeholder="Your Message Here ..."></textarea>
                 </div>
 
-                <button class="btn">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
 
         </div>
