@@ -42,7 +42,7 @@ img{
 h1,h2,h3,h4,h5,h6{
     color: var(--white-color);
     font-family: "Dm Sans", sans-serif;
-}
+} 
 
 span{
     color: var(--main-color);
@@ -61,7 +61,7 @@ p{
 .btn{
     background: var(--main-color);
     padding: 14px 30px;
-    border-radius: 10px;
+    border-radius: 16px;
     font-weight: 600;
     text-transform: capitalize;
     color: var(--black-color);
@@ -199,11 +199,14 @@ header nav .logo img{
 
 /* Start hero */
 
-.hero{
-    height: 100vh;
+.hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 140px 0 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 100px;
 }
 
 .hero .container{
@@ -301,7 +304,6 @@ header nav .logo img{
     width: 299px;
     height: auto;
 }
-
 /* End About Section */
 
 
@@ -352,6 +354,8 @@ header nav .logo img{
 }
 .projects .project_box img{
     width: 45%;
+    border-radius: 50px;
+    border: 2px solid var(--main-color);
 }
 .projects .project_box .text{
     margin-left: 100px;
@@ -825,7 +829,7 @@ header .links .logo,
     transform: translateX(0);
 }
 
-.project-message > i {
+.project-message  i {
     color: var(--main-color);
     font-size: 28px;
 }
@@ -850,4 +854,43 @@ header .links .logo,
         width: 90%;
     }
 
+}
+/* Desktop */
+@media (min-width: 1001px) {
+    .hero .container {
+        gap: 40px;
+    }
+
+    .hero .div_text {
+        width: 55%;
+        min-width: 0;
+    }
+
+    .hero .div_text h1 {
+        font-size: clamp(42px, 4vw, 70px);
+        line-height: 1.15;
+    }
+
+    .hero .div_text h2 {
+        font-size: clamp(30px, 3vw, 48px);
+        line-height: 1.25;
+        margin-top: 15px;
+    }
+
+    .hero .div_img {
+        width: 40%;
+        max-width: 420px;
+        flex-shrink: 0;
+        isolation: isolate;
+    }
+
+    .hero .div_img .persone {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero .btns {
+        flex-wrap: wrap;
+    }
 }
